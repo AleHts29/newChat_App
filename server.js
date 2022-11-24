@@ -11,7 +11,7 @@ const io = new IO(httpServer)
 app.use(express.static('./public'))
 
 
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 
 const messages = [
     { author: 'Pablo', text: 'Hola, que tal?' },
